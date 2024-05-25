@@ -1,0 +1,45 @@
+
+
+<nav class="navbar navbar-light" style="background-color: #A6E3E9;">
+  <a class="navbar-brand" href="/events">
+    <img src="https://img.freepik.com/free-vector/gradient-mobile-store-logo-design_23-2149699533.jpg?size=338&ext=jpg&ga=GA1.1.1700460183.1713398400&semt=ais"
+    width="60" height="60" id="brand" class="d-inline-block align-top" alt="" style="border-radius: 15px;" >
+
+  </a>
+  <a class="navbar-brand" href="/events"><h2> Market Mobile</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="/events/create">Sell Mobile</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+
+      <% if (!user) { %>
+        <li class="nav-item active">
+          <a class="nav-link" href="/users/login"> Login</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="/users/signup"> Sign Up</a>
+          </li>
+        <% } else { %>
+        <li class="nav-item active">
+          <a class="nav-link" href="/users/logout"> Logout</a>
+        </li>
+        <%}  %>
+
+    </ul>
+  </div>
+
+
+
+
+
+
+</nav>
